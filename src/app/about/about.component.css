@@ -1,0 +1,241 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f86216;
+  padding: 20px;
+  color: #FFF2F2;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  color: #FFF2F2;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFF2F2;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #FFF2F2;
+  animation: underline 0.3s ease-in-out forwards;
+}
+
+/* Animation */
+@keyframes underline {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* About Section */
+.about {
+  background-color: #ff871d;
+  color: #FFF2F2;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 50px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Info Section */
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 80%;
+  position: relative;
+  background-color:  #ff9d4c;
+  overflow: hidden;
+  border-radius: 23px;
+}
+
+.info-box {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+/* Team Section */
+.team-member-container {
+  background-color: #008DDA;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.team-member {
+display: inline-block;
+width: 250px;
+margin: 20px;
+padding: 20px;
+background-color: #FFF;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+position: relative; /* Add position relative for absolute positioning */
+transition: transform 0.3s ease;
+border: 2px solid #000000;
+}
+
+.team-member:after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 3px;
+border-radius: 0 0 8px 8px; /* Adjust the border radius to match the team member's bottom border */
+}
+
+.team-member-img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 20px;
+border: solid 3px #008DDA;
+}
+
+.team-member h3 {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 24px;
+margin-bottom: 10px;
+color: #008DDA;
+padding: 7px;
+}
+
+.team-member p {
+font-size: 16px;
+color: #008DDA;
+margin-bottom: 20px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-member:hover{
+  transform: translate(0px, -10px);
+  transition: 0.1s;
+}
+
+.ourTeam-text {
+  font-size: 44px;
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Additional Font Styles */
+#font {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Container Section */
+.container-container {
+  padding-top: 60px;
+}
+.Border-type-shi{
+  border: solid 2px #fc460a;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+.Why-Us-title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background-color: #dc5406; /* Changed */
+  color: #FFF2F2;
+  width: 30%; /* Changed */
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 120px;
+  font-weight: bold;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.our-Team-text-container{
+  background-color: #008DDA;
+  width: 30%;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: auto;
+  font-size: 39px;
+}
+.insta-image{
+  max-width: 30px; 
+  max-height: 30px;
+}
+.footer {
+  background-color: #f76802;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
